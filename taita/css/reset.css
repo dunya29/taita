@@ -1,0 +1,82 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+
+abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,mark,menu,meter,nav,object,output,ol,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,strike,sub,summary,sup,span,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,li,var,video,xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+strong, em, span {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+section, article {
+	display: block;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+svg {
+	vertical-align: middle;
+	display: inline-block;
+	overflow: visible;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+sub,
+sup {
+  font-size: 60% !important;
+	font-weight: inherit;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.7em;
+}

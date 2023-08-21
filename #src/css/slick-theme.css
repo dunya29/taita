@@ -1,0 +1,165 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+
+    display: block;
+    padding: 0;
+
+    cursor: pointer;
+
+    color: #DD1B45;
+    border: none;
+    outline: none;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	z-index: 2;
+	opacity: 1;
+    top: 23%;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.insta .slick-prev,
+.insta .slick-next
+{
+    top: 50%;
+	margin: -25px 0 0;
+}
+.slick-prev svg,
+.slick-next svg
+{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.slick-prev svg path,
+.slick-next svg path
+{
+    fill: currentColor;
+}
+.slick-next:hover,
+.slick-next:focus
+{
+}
+
+.not-touch .slick-prev:hover,
+.not-touch .slick-prev:focus,
+.not-touch .slick-next:hover,
+.not-touch .slick-next:focus
+{
+    color: #fff;
+	background: #DD1B45;
+}
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled
+{
+    background: #eee;
+	color: #999;
+	cursor: default;
+}
+
+.slick-prev:before
+{
+    
+}
+
+.slick-next:before
+{
+    
+}
+
+.slick-prev
+{
+	left: -12px;
+}
+.slick-next
+{
+	right: -12px;
+}
+/* Dots */
+.slick-slider
+{
+	
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -20px;
+	margin: 0;
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+	z-index: 2;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 9px;
+    height: 9px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li:before
+{
+    display: none;
+}
+.slick-dots li span
+{
+    line-height: 0;
+    display: block;
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    color: transparent;
+	border-radius: 100%;
+    outline: none;
+	font-size: 0.00000000000001px;
+	background: #d1d1d1;
+}
+.not-touch .slick-dots li span:hover,
+.not-touch .slick-dots li span:focus
+{
+    background: #DD1B45
+}
+.slick-dots li span:hover:before,
+.slick-dots li span:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li span:before
+{
+
+	
+}
+.slick-dots li.slick-active span
+{
+    background: #009BDF;
+}

@@ -1,0 +1,573 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.media-check {
+	width: 1024px;
+	}
+}
+.this-touch div[class*='grid_'], .this-touch .grid {
+	margin: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.this-touch .no-padd {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.this-touch .row {
+  margin: 0 -20px;
+}
+.this-touch .grid_1_sm {
+	width:8.333%;
+}
+.this-touch .grid_2_sm {
+	width:16.667%;
+}
+.this-touch .grid_3_sm {
+	width:25%;
+}
+.this-touch .grid_4_sm {
+	width:33.333%;
+}
+.this-touch .grid_5_sm {
+	width:41.667%;
+}
+.this-touch .grid_6_sm {
+	width:50%;
+}
+.this-touch .grid_7_sm {
+	width:58.333%;
+}
+.this-touch .grid_8_sm {
+	width:66.667%;
+}
+.this-touch .grid_9_sm {
+	width:75%;
+}
+.this-touch .grid_10_sm {
+	width:83.333%;
+}
+.this-touch .grid_11_sm {
+	width:91.667%;
+}
+.this-touch .grid_12_sm {
+	width:100%;
+}
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+	.this-touch .grid_1_md {
+		width:8.333%;
+	}
+	.this-touch .grid_1_5_md {
+		width:20%;
+	}
+	.this-touch .grid_2_md {
+		width:16.667%;
+	}
+	.this-touch .grid_3_md {
+		width:25%;
+	}
+	.this-touch .grid_4_md {
+		width:33.333%;
+	}
+	.this-touch .grid_5_md {
+		width:41.667%;
+	}
+	.this-touch .grid_6_md {
+		width:50%;
+	}
+	.this-touch .grid_7_md {
+		width:58.333%;
+	}
+	.this-touch .grid_8_md {
+		width:66.667%;
+	}
+	.this-touch .grid_9_md {
+		width:75%;
+	}
+	.this-touch .grid_10_md {
+		width:83.333%;
+	}
+	.this-touch .grid_11_md {
+		width:91.667%;
+	}
+	.this-touch .grid_12_md {
+		width:100%;
+	}
+}
+.this-touch div[class*='grid_'].alpha {
+	padding-left: 0;
+}
+.this-touch div[class*='grid_'].omega {
+	padding-right: 0;
+}
+.this-touch .hide-on-tablet {
+	display: none !important;
+}
+.this-touch .show-on-tablet {
+	display: inline-block;
+}
+@media screen and (min-width: 768px) and (max-width: 899px) {
+	.this-touch .hide-on-tablet-small {
+		display: none !important;
+	}
+	.this-touch .show-on-tablet-small {
+		display: inline-block;
+	}
+}
+.this-touch .left-on-tablet {
+	text-align: left;
+}
+.this-touch .center-on-tablet {
+	text-align: center;
+}
+.this-touch .right-on-tablet {
+	text-align: right;
+}
+body.this-touch.overflow {
+	padding: 0;
+}
+.this-touch .container_12 {
+	width: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.this-touch.iOS input[type="text"], .this-touch.iOS input[type="password"], .this-touch.iOS input[type="tel"], .this-touch.iOS input[type="email"], .this-touch.iOS input[type="search"], .this-touch.iOS input[type="date"], .this-touch.iOS textarea, .this-touch.iOS select {
+    padding: 14px 20px 11px;
+}
+.this-touch .top-banner {
+	position: fixed;
+	top: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 60px 0 20px;
+	z-index: 3;
+}
+.this-touch .top-banner.hidden {
+    top: -99999px;
+}
+.this-touch .top-banner .close {
+	top: 20px;
+	-webkit-transform: translateX(50%);
+	transform: translateX(50%);
+	right: 50%;
+}
+.this-touch .top-banner span {
+    white-space: normal;
+	font-size: 16px;
+}
+.this-touch .header-spacer, .this-touch.index .header-spacer {
+	height: 121px !important;
+}
+/*
+.this-touch.iOS .header-spacer, .this-touch.iOS.index .header-spacer {
+	height: 150px !important;
+}
+*/
+.this-touch header {
+    -webkit-transition: none;
+    transition: none;
+	top: 0;
+}
+.overflow.this-touch header {
+    right: 0;
+}
+.this-touch header, .index.this-touch header {
+	padding: 50px 0 20px;
+}
+.this-touch.sticky:not(.not-sticky) header, .index.sticky.this-touch:not(.not-sticky) header {
+	padding: 20px 0;
+}
+.this-touch header div[class*="grid_"], .this-touch header .container_12 {
+	line-height: normal;
+}
+.this-touch .logo-box{
+	width: 140px;
+	height: 35px;
+	padding: 0;
+}
+.this-touch .logo-box svg path {
+	-webkit-transition: none;
+	transition: none;
+}
+.this-touch .justify {
+    text-align: right;
+    text-align-last: right;
+    text-justify: none;
+}
+.this-touch .justify > li {
+    margin: 0 0 0 60px !important;
+}
+.this-touch .menu-btn {
+	display: block;
+	position: absolute;
+	width: 22px;
+	height: 18px;
+	top: 58.5px;
+	right: 40px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 3;
+}
+.sticky.this-touch:not(.not-sticky) .menu-btn {
+	top: 28.5px;
+}
+.this-touch .menu-btn span {
+	width: 22px;
+	display: inline-block;
+	height: 2px;
+	background: #DD1B45;
+	cursor: pointer;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.this-touch .menu-btn:before, .this-touch .menu-btn:after {
+	position: absolute;
+	content: '';
+	width: 22px;
+	display: inline-block;
+	height: 2px;
+	background: #DD1B45;
+	left: 0;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	-webkit-transform-origin: left 50%;
+	transform-origin: left 50%;
+}
+.this-touch .menu-btn:before {
+	top: 0;
+}
+.this-touch .menu-btn:after {
+	bottom: 0;
+}
+.this-touch .menu-btn.opened {
+	z-index: 9999;
+}
+.this-touch .menu-btn.opened span {
+	opacity: 0;
+}
+.this-touch .menu-btn.opened:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: #afafaf;
+	width: 23px;
+}
+.this-touch .menu-btn.opened:after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background: #afafaf;
+	width: 23px;
+}
+.this-touch .menu {
+	position: fixed;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	top: -99999px;
+	opacity: 0;
+	left: 0;
+	box-sizing: border-box;
+	-webkit-transition: opacity .5s 0s, top 0s .5s;
+	transition: opacity .5s 0s, top 0s .5s;
+}
+.this-touch .menu.opened {
+	top: 0;
+	opacity: 1;
+	z-index: 9999;
+	-webkit-transition: opacity .5s 0s, top 0s 0s;
+	transition: opacity .5s 0s, top 0s 0s;
+}
+.this-touch .menu > div {
+	padding: 100px 20px;
+}
+.this-touch .menu-item {
+    display: block;
+    padding: 0 0 0 30px;
+    border-radius: 0;
+    border: 0;
+    font-size: 16px;
+	letter-spacing: 1px;
+	margin: 0 0 25px;
+	position: relative;
+}
+.this-touch .menu-item:before {
+    display: inline-block;
+    content: '';
+	width: 17px;
+	height: 1px;
+	background: #DD1B45;
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+.this-touch .menu-item.current {
+    color: #DD1B45;
+    border: 0;
+}
+.this-touch .menu .btn {
+	margin: 30px 0 0;
+}
+.this-touch .search-box {
+	left: 20px;
+}
+.this-touch .main-box {
+    padding: 170px 0 350px;
+    margin: -121px 0 50px;
+}
+.this-touch .main-box-title {
+    padding: 0 0 30px;
+}
+.this-touch .overflow-box, .this-touch .tile-box.double .overflow-box {
+    display: none;
+}
+.this-touch .tile-box-img, .this-touch .tile-box.double .tile-box-img {
+    height: 300px;
+}
+.this-touch .tile-box.double .h2 {
+    font-size: 22px;
+}
+.this-touch .padd-box {
+    padding: 0 0 30px;
+}
+.this-touch .footer-menu-line {
+    padding: 35px 0 15px;
+}
+.this-touch .footer-menu-item {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+.this-touch .social-link {
+    margin: 10px 7px 20px;
+	width: 28px;
+    height: 28px;
+}
+.this-touch .footer-bottom-line {
+    padding: 30px 0 40px;
+}
+.not-sticky.this-touch .footer-bottom-line {
+    padding: 35px 0 100px;
+}
+.this-touch .footer-bottom-line p {
+    font-size: 14px;
+}
+.this-touch a.es-link {
+    white-space: nowrap;
+    font-size: 13px;
+}
+.this-touch .popup .close {
+    color: #afafaf;
+    top: 17px;
+    right: 20px;
+}
+.this-touch .popup .close svg {
+    width: 17px;
+	height: 17px;
+}
+.this-touch .thumb-carousel .slick-next, .this-touch .thumb-carousel .slick-prev {
+	opacity: 1;
+}
+.this-touch .thumb-carousel .slick-prev {
+	left: 0;
+}
+.this-touch .thumb-carousel .slick-next {
+	right: 0;
+}
+.this-touch .sub-menu-top {
+    margin: -10px 0 0 -40px;
+    width: calc(100% + 80px);
+}
+.this-touch .sub-menu-top > div {
+    padding: 0 20px 0 40px;
+}
+.this-touch .filter-dropdown-btn {
+    margin: 0 0 20px;
+	font-size: 14px;
+}
+.this-touch .filter-dropdown-btn.opened {
+	color: #E21C46;
+}
+.this-touch .filter-form-box {
+	padding: 20px 0;
+}
+.this-touch .filter-form-box form > div {
+	width: 100%;
+	padding: 0;
+}
+.this-touch .filter-form-box .nowrap-line {
+    white-space: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -40px;
+    padding: 0 30px;
+}
+.this-touch .filter-form-box .nowrap-line > div {
+    white-space: normal;
+	padding: 0 10px;
+}
+.this-touch .filter-box-btn {
+	padding: 15px 0 16px;
+}
+.this-touch .filter-dropdown-btn.opened + .filter-dropdown-box {
+	top: 50px;
+}
+.this-touch .full-width .filter-box-btn.fixed > div {
+	width: 100%;
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+.this-touch .price-slider-box {
+	margin: 0;
+}
+.this-touch .noUi-target {
+    margin: 13px 0 35px;
+}
+.this-touch .adv-box.square {
+	min-height: 1px;
+}
+.this-touch .justify.icon-box-list {
+    text-align: left;
+    text-align-last: left;
+    text-justify: none;
+}
+.this-touch .justify.icon-box-list > li {
+    margin: 0 !important;
+}
+.this-touch .sticky-menu.fixed > div:first-child {
+    padding: 0 40px;
+	width: 100%;
+}
+.this-touch .sticky-menu .grid_8 {
+	width: 100%;
+}
+.this-touch .sticky-menu .grid_4, .this-touch .fixed-btn-box  {
+	display: block !important;
+    position: fixed !important;
+	width: auto !important;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 10px 20px 10px;
+	background: #fff;
+	border-top: 1px solid #e9e9e9;
+	-webkit-transition: bottom .3s;
+	transition: bottom .3s;
+	z-index: 3;
+}
+.this-touch .fixed-btn-box .btn {
+	margin: 0;
+	padding: 15px 0;
+	height: auto;
+	border-radius: 25px;
+}
+.this-touch .on-top {
+    right: 40px;
+}
+.this-touch .on-top.opened {
+    bottom: 40px;
+}
+.this-touch.not-sticky .on-top.opened,
+.this-touch .fixed-btn-box + .on-top.opened {
+    bottom: 100px;
+}
+.this-touch .form-box-title {
+	margin: 0 0 -1px;
+}
+.this-touch .card-box-price .btn {
+	display: none;
+}
+.this-touch .card-box .card-box-text {
+	padding: 0 55px 0 0;
+}
+@media screen  and (min-width: 900px) and (max-width: 1024px) {
+	.this-touch .popup p {
+		font-size: 12px;
+		line-height: 16px;
+		margin: 0 0 15px;
+	}
+}
+@media screen  and (min-width: 768px) and (max-width: 899px) {
+	.this-touch .main-box {
+		padding: 170px 0 100px;
+		margin: -121px 0 50px;
+	}
+	.this-touch .adv-box:not(.square) {
+		padding-bottom: 300px;
+	}
+	.this-touch .adv-box div {
+		width: 100%;
+		height: 300px;
+		top: auto;
+		right: 0;
+		bottom: 0;
+		background-position: center top !important;
+	}
+	.this-touch .dropdown-btn {
+		margin: -1px 0 0;
+	}
+	.this-touch .dropdown-box {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		box-sizing: border-box;
+		padding: 60px 0;
+		background: #fff;
+		margin: 0;
+		left: 0;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.this-touch .text-dropdown .dropdown-box {
+		position: absolute;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin: 5px 0 0;
+	}
+	.this-touch .dropdown-btn.opened + .dropdown-box {
+		top: 0;
+		z-index: 9999;
+	}
+	.this-touch .dropdown-box .close-dropdown {
+		position: absolute;
+		border: 0;
+		display: block;
+		top: 17px;
+		right: 20px;
+		color: #afafaf;
+	}
+	.this-touch .dropdown-box > div {
+		border-radius: 0;
+	}
+	.this-touch .dropdown-box.full-width > div {
+		padding: 0 20px;
+	}
+	.this-touch .dropdown-box label, .this-touch .dropdown-box .action {
+		font-size: 16px;
+	}
+	.this-touch input[type="checkbox"] + label.checkbox-btn, .this-touch input[type="radio"] + label.checkbox-btn {
+		/*margin: 0 15px 15px 0;*/
+	}
+	.this-touch .big-btn {
+		height: 50px;
+		line-height: 50px;
+		border-radius: 0 0 5px 5px;
+	}
+	.this-touch .main-form-box form > div:first-child .dropdown-btn {
+		border-radius: 5px 5px 0 0;
+	}
+	.this-touch .scroll-nav li a {
+		font-size: 12px;
+		margin: 0 20px 10px 0;
+	}
+}

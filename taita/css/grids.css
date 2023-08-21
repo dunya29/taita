@@ -1,0 +1,106 @@
+
+/* `Container
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 {
+	display: block;
+	width: 96%;
+	max-width: 1320px;
+	margin: 0 auto;
+	font-size: 0.000000000001px;
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_1_5 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 13px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid
+ {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 13px;
+}
+
+.no-spaces, form {
+	font-size: 0.000000000001px;
+}
+.row {
+	font-size: 0.000000000001px;
+	margin: 0 -13px;
+}
+
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.alpha{
+	padding-left: 0 !important;
+}
+.omega {
+	padding-right: 0 !important;
+}
+.grid_1 {
+	width:8.333%;
+}
+.grid_1_5 {
+	width:20%;
+}
+
+.grid_2 {
+	width:16.667%;
+}
+.grid_3 {
+	width:25%;
+}
+.grid_4 {
+	width:33.333%;
+}
+.grid_5 {
+	width:41.667%;
+}
+.grid_1_5 {
+	width:20%;
+}
+.grid_6 {
+	width:50%;
+}
+
+.grid_7 {
+	width:58.333%;
+}
+.grid_8 {
+	width:66.667%;
+}
+.grid_9 {
+	width:75%;
+}
+.grid_10 {
+	width:83.333%;
+}
+.grid_11 {
+	width:91.667%;
+}
+.grid_12 {
+	width:100%;
+}
