@@ -42,6 +42,13 @@ h3, .h3 {
         }
     }
 }
+@media screen and (max-width: 1400px) {
+    .this-touch .menu-item.has-chevron:after {
+        width: 7px;
+        height: 7px;
+        border-width: 2px
+    }
+}
 .header-spacer.static {
     margin-bottom: 62px;
 }
