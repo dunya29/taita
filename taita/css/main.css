@@ -16,28 +16,34 @@ h3,
   top: 0;
 }
 
-.menu-item.has-chevron:after {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  margin: 0 0 1px 5px;
-  border-bottom: 2px solid #333;
-  border-right: 2px solid #333;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.menu-item.has-chevron:hover:after {
-  border-color: #ff7600;
-}
-
 .header-spacer.static {
   margin-bottom: 62px;
+}
+
+.menu-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu-item svg {
+  fill: #333;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20px;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 3px 5px;
+  -webkit-transform: scale(0.84);
+  -ms-transform: scale(0.84);
+  transform: scale(0.84);
+}
+
+.menu-item:hover svg {
+  fill: #ff7600;
 }
 
 .tab-page__nav {
@@ -53,19 +59,23 @@ h3,
   display: none;
 }
 
-.tab-page__nav span {
+.tab-page__nav a {
   font-size: 20px;
   display: inline-block;
   padding: 16px 20px 17px;
   margin-right: 10px;
-  cursor: pointer;
+  border-bottom: 0;
 }
 
-.tab-page__nav span:last-child {
+.tab-page__nav a:last-child {
   margin-right: 0;
 }
 
-.tab-page__nav span.active {
+.tab-page__nav a:hover {
+  color: #333;
+}
+
+.tab-page__nav a.active {
   border-radius: 8px 8px 0px 0px;
   border-top: 1px solid #CACACA;
   border-right: 1px solid #CACACA;
@@ -81,7 +91,6 @@ h3,
 
 .tab-page__block {
   padding: 40px;
-  display: none;
 }
 
 .tab-page__block p,
@@ -104,6 +113,40 @@ h3,
 
 .tab-page__content {
   max-width: 1000px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
 }
 
 .item-report {
@@ -258,10 +301,60 @@ h3,
 }
 
 @media screen and (max-width: 1400px) {
-  .this-touch .menu-item.has-chevron:after {
-    width: 7px;
-    height: 7px;
-    border-width: 2px;
+  .header-spacer.static {
+    margin-bottom: 40px;
+  }
+
+  .this-touch .menu-item svg {
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+    margin: 0 0 7px 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .tab-page__inner {
+    position: relative;
+  }
+
+  .tab-page__inner:before,
+  .tab-page__inner:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+
+  .tab-page__inner:before {
+    height: 50px;
+    width: 44px;
+    right: 0;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, #ffffff), to(#fff));
+    background: -o-linear-gradient(left, transparent, #ffffff 50%, #fff);
+    background: linear-gradient(to right, transparent, #ffffff 50%, #fff);
+  }
+
+  .tab-page__inner:after {
+    height: 53px;
+    width: 30px;
+    right: 5px;
+    background: url(../img/icons/scroll.svg) center/contain no-repeat;
+    -webkit-animation: scroll 3s linear infinite;
+    animation: scroll 3s linear infinite;
+  }
+
+  .tab-page__inner.scrollend:before,
+  .tab-page__inner.scrollend:after {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) and (max-width: 1400px) {
+  .tab-page__inner:after {
+    width: 25px;
   }
 }
 
@@ -271,10 +364,11 @@ h3,
     font-size: 26px;
   }
 
-  .menu-item.has-chevron:after {
-    width: 5px;
-    height: 5px;
-    border-width: 1px;
+  .menu-item svg {
+    -webkit-transform: scale(0.65);
+    -ms-transform: scale(0.65);
+    transform: scale(0.65);
+    margin: 0 0 2px 2px;
   }
 }
 
@@ -284,7 +378,7 @@ h3,
     font-size: 20px;
   }
 
-  .tab-page__nav span {
+  .tab-page__nav a {
     font-size: 16px;
   }
 

@@ -1,8 +1,3 @@
-$(".tab-page__nav span").click(function(e) {
-    let href = $(this).attr("data-tab");
-    $(this).addClass("active").siblings("span").removeClass("active"),
-    $(`[data-block=${href}]`).fadeIn().addClass("active").siblings(".tab-page__block").hide().removeClass("active")
-}),
 $(".item-report__header").on("click", function () {
     $(this)
       .toggleClass("open")
@@ -15,3 +10,10 @@ $(".item-report__header").on("click", function () {
       .siblings(".item-report__body")
       .slideUp();
 });
+$(".tab-page__nav").on("scrollend", function(e) {
+  if ((this.scrollWidth - this.clientWidth - this.scrollLeft) < 30) {
+    $(".tab-page__inner").addClass("scrollend")
+  } else {
+    $(".tab-page__inner").removeClass("scrollend")
+  }
+})
